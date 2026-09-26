@@ -11,6 +11,16 @@
   </p>
 </div>
 
+## About
+
+Systems & DevSecOps — building infrastructure that is automated,
+observable and secure by default.
+
+DNS & NTP infrastructure, CI/CD, observability. Infrastructure as code:
+Ansible, Docker, Kubernetes, Helm, ArgoCD, on a Linux base.
+Cyber-security background; Go, Python and shell when the tool doesn't
+exist yet.
+
 ## Config
 
 | | |
