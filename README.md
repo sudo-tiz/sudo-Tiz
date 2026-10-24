@@ -23,31 +23,11 @@ observable and secure by default.
 DNS & NTP, CI/CD, observability, infrastructure as code on a Linux base.
 Cyber-security background; Go, Python and shell when the tool doesn't exist yet.
 
-## Stack
-
-| | |
-|---|---|
-| IaC & CI/CD | Ansible · Terraform · GitLab CI · ArgoCD · Helm · Renovate · Trivy · Vault |
-| Containers | Docker · Kubernetes · Traefik · Nginx |
-| Network & DNS | PowerDNS · Bind · Unbound · NTP · WireGuard · nftables |
-| Observability | Prometheus · Grafana · Loki · Alloy · Alertmanager |
-| Security | Fail2ban · CIS-CAT · Trivy · mobile/web/API pentesting · Frida |
-| Languages | Go · Python · Shell · Kotlin · Rust · Lua |
-| Systems | Arch · Debian · Ubuntu · Proxmox |
-
 ## Self-hosting
 
-One `justfile`, one shared inventory, two playbooks:
-
-```
-server                     just + shared inventory
- ├─ mash-playbook            services: Docker, Traefik, PostgreSQL, borg…
- └─ math-playbook            host setup, firewall, mail relay, APT, KVM VMs
-```
-
 | | |
 |---|---|
-| [server](https://github.com/sudo-Tiz/server) | Entry point: syncs the inventory, then runs MASH or math |
+| [JARDIN](https://github.com/sudo-Tiz/JARDIN) | Entry point: syncs the inventory, then runs MASH or math |
 | [math-playbook](https://github.com/sudo-Tiz/math-playbook) | Idempotent Ansible roles for what MASH doesn't cover (Debian family) |
 | [mash-playbook](https://github.com/mother-of-all-self-hosting/mash-playbook) | Upstream MASH, used unmodified |
 
@@ -56,7 +36,7 @@ server                     just + shared inventory
 | | |
 |---|---|
 | [LARBRE](https://github.com/sudo-Tiz/LARBRE) | Arch Linux auto-setup: one script → Hyprland desktop, dotfiles, secure DNS |
-| [fast_linux_config](https://github.com/sudo-Tiz/fast_linux_config) | Minimal dotfiles for a fresh Linux box (Neovim, Tmux, Zsh, Bash) |
+| [LARBUSTE](https://github.com/sudo-Tiz/LARBUSTE) | Minimal dotfiles for a fresh Linux box (Neovim, Tmux, Zsh, Bash) |
 
 ## Projects
 
